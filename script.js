@@ -24,16 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const DKOmega = 2 * OmegaSum * (kaos + kpos);
       const DSOmega = DKOmega + task1("V10KVOmega");
 
-      // Вивід результатів
-      document.getElementById("OmegaSum").textContent =
-        OmegaSum.toFixed(2);
+      document.getElementById("OmegaSum").textContent = OmegaSum.toFixed(2);
       document.getElementById("tvos").textContent = tvos.toFixed(2);
-      document.getElementById("kaos").textContent = (kaos * 1e4).toFixed(
-        2
-      );
-      document.getElementById("kpos").textContent = (kpos * 1e4).toFixed(
-        2
-      );
+      document.getElementById("kaos").textContent = (kaos * 1e4).toFixed(2);
+      document.getElementById("kpos").textContent = (kpos * 1e4).toFixed(2);
       document.getElementById("DKOmega").textContent = (DKOmega * 1e4).toFixed(
         2
       );
@@ -45,11 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", function () {
       const task2 = allIds();
 
-      const Wneda =
-        task2("Omega") * task2("tv") * task2("Pm") * task2("Tm");
+      const Wneda = task2("Omega") * task2("tv") * task2("Pm") * task2("Tm");
       const Wnedp = task2("kp") * task2("Pm") * task2("Tm");
-      const Zper =
-        task2("ZperA") * Wneda + task2("ZperP") * Wnedp;
+      const Zper = task2("ZperA") * Wneda + task2("ZperP") * Wnedp;
 
       document.getElementById("Wneda").textContent = Wneda.toFixed(2);
       document.getElementById("Wnedp").textContent = Wnedp.toFixed(2);

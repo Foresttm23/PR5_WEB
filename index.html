@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Веб калькулятор</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container-main">
+        <h2 class="section-title">Завдання 1</h2>
+        <div class="form">
+          <label for="PL110KVOmega">ПЛ-110 кВ:</label>
+          <input type="text" id="PL110KVOmega" />
+
+          <label for="T110KVOmega">Т-110 кВ:</label>
+          <input type="text" id="T110KVOmega" />
+
+          <label for="V110KVOmega">V-110 кВ:</label>
+          <input type="text" id="V110KVOmega" />
+
+          <label for="V10KVOmega">V-10 кВ:</label>
+          <input type="text" id="V10KVOmega" />
+
+          <label for="tiresOmega">Шини 10кВ на 1 приєднання:</label>
+          <input type="text" id="tiresOmega" />
+
+          <label for="PL110KVTvi">ПЛ-110 кВ:</label>
+          <input type="text" id="PL110KVTvi" />
+
+          <label for="T110KVTvi">Т-110 кВ:</label>
+          <input type="text" id="T110KVTvi" />
+
+          <label for="V110KVTvi">V-110 кВ:</label>
+          <input type="text" id="V110KVTvi" />
+
+          <label for="V10KVTvi">V-10 кВ:</label>
+          <input type="text" id="V10KVTvi" />
+
+          <label for="tiresTvi">Шини 10кВ на 1 приєднання:</label>
+          <input type="text" id="tiresTvi" />
+
+          <label for="PlannedKMax">kmax:</label>
+          <input type="text" id="PlannedKMax" />
+
+          <button id="button__first" class="button-first">Порахувати</button>
+        </div>
+        <div class="result">
+          <h3 class="section-title">Результати</h3>
+          <table>
+            <tr>
+              <th>Назва</th>
+              <th>Результат</th>
+            </tr>
+            <tr>
+              <td>Частота відмов одноколової системи</td>
+              <td id="OmegaSum"></td>
+            </tr>
+            <tr>
+              <td>Середня тривалість відновлення</td>
+              <td id="tvos"></td>
+            </tr>
+            <tr>
+              <td>Коефіцієнт аварійного простою одноколової системи</td>
+              <td id="kaos"></td>
+            </tr>
+            <tr>
+              <td>Коефіцієнт планового простою одноколової системи</td>
+              <td id="kpos"></td>
+            </tr>
+            <tr>
+              <td>Частота відмов одночасно двох кіл двоколової системи</td>
+              <td id="DKOmega"></td>
+            </tr>
+            <tr>
+              <td>
+                Частота відмов двоколової системи з урахуванням секційного
+                вимикача
+              </td>
+              <td id="DSOmega"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container-main">
+        <h2 class="section-title">Завдання 2</h2>
+        <div class="form">
+          <label for="ZperA">Зпер.а:</label>
+          <input type="text" id="ZperA" />
+
+          <label for="ZperP">Зпер.п:</label>
+          <input type="text" id="ZperP" />
+
+          <label for="Omega">ω:</label>
+          <input type="text" id="Omega" />
+
+          <label for="tv">tв:</label>
+          <input type="text" id="tv" />
+
+          <label for="kp">kп:</label>
+          <input type="text" id="kp" />
+
+          <label for="Pm">Pм:</label>
+          <input type="text" id="Pm" />
+
+          <label for="Tm">Tм:</label>
+          <input type="text" id="Tm" />
+
+          <button id="button__second" class="button-second">Порахувати</button>
+        </div>
+        <div class="result">
+          <h3 class="section-title">Результати</h3>
+          <table>
+            <tr>
+              <th>Назва</th>
+              <th>Результат</th>
+            </tr>
+            <tr>
+              <td>Сподівання аварійного недовідпущення електроенергії</td>
+              <td id="Wneda"></td>
+            </tr>
+            <tr>
+              <td>Сподівання планового недовідпущення електроенергії</td>
+              <td id="Wnedp"></td>
+            </tr>
+            <tr>
+              <td>Сподівання збитків від переривання електропостачання</td>
+              <td id="Zper"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
